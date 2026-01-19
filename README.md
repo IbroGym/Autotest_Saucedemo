@@ -22,15 +22,15 @@ Test System: https://www.saucedemo.com/
 
 ## Setup Instructions (Windows PowerShell)
 
-## 1) Create and activate virtual environment
+### 1) Create and activate virtual environment
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-## 2) Install dependencies
+### 2) Install dependencies
 python -m pip install --upgrade pip
 python -m pip install selenium pytest webdriver-manager pytest-html
 
-## Running Tests
+### 3) Running Tests
 -- Run all tests --
 python -m pytest -v
 
@@ -43,12 +43,12 @@ python -m pytest -v --html=report.html --self-contained-html
 After execution, the report will be created: report.html
 
 ## Logs and Screenshots
-# Logs
+### Logs
 
 Logs are written automatically to the logs/ folder.
 Each run creates a new log file: logs/test_run_<timestamp>.log
 
-# Screenshots
+### Screenshots
 
 Screenshots are captured automatically on test failure.
 Files are stored in the screenshots/ folder.
