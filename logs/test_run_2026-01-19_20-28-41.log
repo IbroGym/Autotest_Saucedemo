@@ -1,0 +1,10 @@
+2026-01-19 20:28:41 | INFO | qa | === Browser session START ===
+2026-01-19 20:28:56 | ERROR | qa | TEST FAILED: test_cart
+2026-01-19 20:28:56 | ERROR | qa | EXCEPTION: EXPECTED: Quantity input field should appear after clicking 'Add to Cart'. ACTUAL: Quantity input field did not appear (timeout).
+assert False
+2026-01-19 20:28:57 | ERROR | qa | SCREENSHOT SAVED: screenshots\test_cart_2026-01-19_20-28-56.png
+2026-01-19 20:28:57 | INFO | qa | === Browser session END ===
+2026-01-19 20:28:59 | INFO | qa | === Browser session START ===
+2026-01-19 20:29:03 | INFO | qa | === Browser session END ===
+2026-01-19 20:29:05 | INFO | qa | === Browser session START ===
+2026-01-19 20:29:11 | INFO | qa | === Browser session END ===
