@@ -11,26 +11,28 @@ def login(driver, wait):
     wait.until(EC.url_contains("inventory.html"))
 
 
-def test_logout(driver):
+def test_logout(driver, logger):
     
     wait = WebDriverWait(driver, 10)
 
-    # Preconditions: user is logged in
+    logger.info("Test Start: test_login")
+    logger.info("Step 1: Open login page")
     login(driver, wait)
 
-    # Step 1: Open burger menu
+    logger.info("Step 2: Open burger menu")
     menu_btn = wait.until(
         EC.element_to_be_clickable((By.ID, "react-burger-menu-btn"))
     )
     menu_btn.click()
 
-    # Step 2: Click Logout
+    logger.info("Step 3: Click logout")
     logout_link = wait.until(
         EC.element_to_be_clickable((By.ID, "logout_sidebar_link"))
     )
     logout_link.click()
 
     # Checkpoint 1: URL is login page
+    logger.info("Step 4: Verify the user in login page")
     wait.until(EC.url_to_be("https://www.saucedemo.com/"))
     assert driver.current_url == "https://www.saucedemo.com/"
 
